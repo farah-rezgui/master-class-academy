@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Master Class Academy — Institut de formation en cuisine &amp; pâtisserie</title>
+<meta name="description" content="Master Class Academy, centre de formation professionnelle en cuisine et pâtisserie à Bardo, Tunis. CAP, BTP, BTS et formations accélérées avec des chefs professionnels.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#accueil" class="brand">
+      <span class="brand-mark">
+        <img src="images/logo.png" alt="Master Class Academy">
+      </span>
+      <span class="brand-text">
+        <strong>Master Class</strong>
+        <em>Academy</em>
+      </span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#accueil" data-i18n="nav_home">Accueil</a>
+      <a href="#academie" data-i18n="nav_academy">À propos de nous</a>
+      <a href="#formations" data-i18n="nav_formations">Formations</a>
+      <a href="#chefs" data-i18n="nav_chefs">Nos Chefs</a>
+      <a href="#galerie" data-i18n="nav_gallery">Galerie</a>
+      <a href="#inscription" data-i18n="nav_registration">Inscription</a>
+      <a href="#contact" data-i18n="nav_contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <div class="lang-switch" id="langSwitch">
+        <button type="button" class="lang-btn active" data-lang="fr">FR</button>
+        <span class="lang-sep">|</span>
+        <button type="button" class="lang-btn" data-lang="ar">AR</button>
+      </div>
+      <a href="#inscription" class="btn btn-gold nav-cta" data-i18n="nav_register_btn">Inscription</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- mobile menu overlay -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#accueil" data-i18n="nav_home">Accueil</a>
+  <a href="#academie" data-i18n="nav_academy">À propos de nous</a>
+  <a href="#formations" data-i18n="nav_formations">Formations</a>
+  <a href="#chefs" data-i18n="nav_chefs">Nos Chefs</a>
+  <a href="#galerie" data-i18n="nav_gallery">Galerie</a>
+  <a href="#inscription" data-i18n="nav_registration">Inscription</a>
+  <a href="#contact" data-i18n="nav_contact">Contact</a>
+  <div class="mobile-lang">
+    <button type="button" class="lang-btn active" data-lang="fr">FR</button>
+    <span class="lang-sep">|</span>
+    <button type="button" class="lang-btn" data-lang="ar">AR</button>
+  </div>
+</div>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="accueil">
+  <div class="hero-bg">
+    <video id="heroVideo" autoplay muted loop playsinline poster="images/hero.jpg">
+      <source src="videos/vd3.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+  </div>
+
+  <div class="hero-content">
+    <p class="hero-eyebrow" data-i18n="hero_eyebrow">Centre de formation professionnelle · Bardo, Tunis</p>
+    <h1 class="hero-title">
+      <span data-i18n="hero_title_1">MASTER CLASS</span>
+      <span class="gold-word" data-i18n="hero_title_2">ACADEMY</span>
+    </h1>
+    <p class="hero-tagline" data-i18n="hero_tagline">Formez-vous aux métiers de la cuisine et de la pâtisserie</p>
+    <p class="hero-subtitle" data-i18n="hero_subtitle">Développez vos compétences, apprenez auprès de professionnels et construisez votre avenir dans l'univers de la gastronomie.</p>
+
+    <div class="hero-buttons">
+      <a href="#formations" class="btn btn-gold" data-i18n="hero_btn1">Découvrir nos formations</a>
+      <a href="#inscription" class="btn btn-outline" data-i18n="hero_btn2">Je m'inscris maintenant</a>
+    </div>
+
+    <div class="hero-badges">
+      <div class="hero-badge"><i class="fa-solid fa-hat-chef"></i><span data-i18n="hero_badge1">Chefs professionnels</span></div>
+      <div class="hero-badge"><i class="fa-solid fa-graduation-cap"></i><span data-i18n="hero_badge2">Formations professionnelles</span></div>
+      <div class="hero-badge"><i class="fa-solid fa-utensils"></i><span data-i18n="hero_badge3">Formation pratique</span></div>
+    </div>
+  </div>
+
+  <a href="#academie" class="scroll-cue" aria-label="Défiler"><span></span></a>
+</section>
+
+<!-- ============ INTRO / STATS ============ -->
+<section class="intro" id="academie">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2 data-i18n="intro_title">Votre avenir commence en cuisine</h2>
+      <p data-i18n="intro_text">Master Class Academy est un centre spécialisé dans la formation professionnelle en cuisine et pâtisserie. Nous accompagnons les passionnés et les futurs professionnels dans l'acquisition de compétences pratiques et professionnelles.</p>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-card reveal">
+        <div class="stat-icon"><img src="images/sushi-hands.jpg" alt=""></div>
+        <h3 data-i18n="stat1_title">Formation pratique</h3>
+        <p data-i18n="stat1_text">Des ateliers concrets en cuisine professionnelle, dès le premier jour.</p>
+      </div>
+      <div class="stat-card reveal">
+        <div class="stat-icon"><img src="images/chef-plating1.jpg" alt=""></div>
+        <h3 data-i18n="stat2_title">Chefs professionnels</h3>
+        <p data-i18n="stat2_text">Un encadrement assuré par des formateurs issus du métier.</p>
+      </div>
+      <div class="stat-card reveal">
+        <div class="stat-icon"><img src="images/certificate.jpg" alt=""></div>
+        <h3 data-i18n="stat3_title">Certifications</h3>
+        <p data-i18n="stat3_text">Des diplômes reconnus, du CAP au BTS.</p>
+      </div>
+      <div class="stat-card reveal">
+        <div class="stat-icon"><img src="images/kitchen-team1.jpg" alt=""></div>
+        <h3 data-i18n="stat4_title">Opportunités professionnelles</h3>
+        <p data-i18n="stat4_text">Une insertion facilitée en Tunisie et à l'étranger.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FORMATIONS ============ -->
+<section class="formations" id="formations">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow-soft" data-i18n="formations_eyebrow">Parcours de formation</p>
+      <h2 data-i18n="formations_title">Nos formations</h2>
+      <p data-i18n="formations_subtitle">Des parcours adaptés à votre niveau et à votre projet professionnel.</p>
+    </div>
+
+    <div class="formation-grid">
+
+      <article class="formation-card reveal">
+        <div class="formation-img"><img src="images/pastry-prep.jpg" alt="CAP Cuisine et Pâtisserie" loading="lazy"></div>
+        <div class="formation-body">
+          <div class="formation-icon"><i class="fa-solid fa-mortar-pestle"></i></div>
+          <h3 data-i18n="f1_title">CAP Cuisine &amp; Pâtisserie</h3>
+          <p data-i18n="f1_text">Une formation pratique pour acquérir les fondamentaux de la cuisine et de la pâtisserie.</p>
+          <span class="formation-elig" data-i18n="f1_elig">Accessible à partir du niveau 9ème année de base.</span>
+          <a href="#inscription" class="formation-btn" data-i18n="formation_cta">S'informer<i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="formation-card reveal">
+        <div class="formation-img"><img src="images/chef-plating2.jpg" alt="BTP Cuisine" loading="lazy"></div>
+        <div class="formation-body">
+          <div class="formation-icon"><i class="fa-solid fa-kitchen-set"></i></div>
+          <h3 data-i18n="f2_title">BTP Cuisine</h3>
+          <p data-i18n="f2_text">Une formation professionnelle destinée aux futurs professionnels de la cuisine.</p>
+          <span class="formation-elig" data-i18n="f2_elig">Accessible à partir du niveau 2ème secondaire ou CAP.</span>
+          <a href="#inscription" class="formation-btn" data-i18n="formation_cta">S'informer<i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="formation-card reveal">
+        <div class="formation-img"><img src="images/croissant.jpg" alt="BTP Pâtisserie" loading="lazy"></div>
+        <div class="formation-body">
+          <div class="formation-icon"><i class="fa-solid fa-cookie-bite"></i></div>
+          <h3 data-i18n="f3_title">BTP Pâtisserie</h3>
+          <p data-i18n="f3_text">Développez vos compétences en pâtisserie et maîtrisez les techniques professionnelles.</p>
+          <span class="formation-elig" data-i18n="f3_elig">Accessible à partir du niveau 2ème secondaire ou CAP.</span>
+          <a href="#inscription" class="formation-btn" data-i18n="formation_cta">S'informer<i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="formation-card reveal">
+        <div class="formation-img"><img src="images/chef-plating1.jpg" alt="BTS Cuisine" loading="lazy"></div>
+        <div class="formation-body">
+          <div class="formation-icon"><i class="fa-solid fa-award"></i></div>
+          <h3 data-i18n="f4_title">BTS Cuisine</h3>
+          <p data-i18n="f4_text">Une formation avancée pour développer une véritable expertise professionnelle en cuisine.</p>
+          <span class="formation-elig" data-i18n="f4_elig">Accessible avec le Baccalauréat ou un BTP.</span>
+          <a href="#inscription" class="formation-btn" data-i18n="formation_cta">S'informer<i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="formation-card reveal">
+        <div class="formation-img"><img src="images/seafood.jpg" alt="BTS Pâtisserie" loading="lazy"></div>
+        <div class="formation-body">
+          <div class="formation-icon"><i class="fa-solid fa-cake-candles"></i></div>
+          <h3 data-i18n="f5_title">BTS Pâtisserie</h3>
+          <p data-i18n="f5_text">Perfectionnez vos techniques et préparez votre avenir dans le monde de la pâtisserie.</p>
+          <span class="formation-elig" data-i18n="f5_elig">Accessible avec le Baccalauréat ou un BTP.</span>
+          <a href="#inscription" class="formation-btn" data-i18n="formation_cta">S'informer<i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="formation-card reveal">
+        <div class="formation-img"><img src="images/certificate.jpg" alt="Certificat de fin de formation" loading="lazy"></div>
+        <div class="formation-body">
+          <div class="formation-icon"><i class="fa-solid fa-certificate"></i></div>
+          <h3 data-i18n="f6_title">Certificat de fin de formation</h3>
+          <p data-i18n="f6_text">Une formation adaptée aux personnes souhaitant développer rapidement leurs compétences.</p>
+          <span class="formation-elig" data-i18n="f6_elig">Accessible quel que soit le niveau.</span>
+          <a href="#inscription" class="formation-btn" data-i18n="formation_cta">S'informer<i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="formation-card formation-card--wide reveal">
+        <div class="formation-img"><img src="images/pizza.jpg" alt="Formations accélérées" loading="lazy"></div>
+        <div class="formation-body">
+          <div class="formation-icon"><i class="fa-solid fa-bolt"></i></div>
+          <h3 data-i18n="f7_title">Formations accélérées</h3>
+          <p data-i18n="f7_text">Des formations intensives et pratiques pour apprendre rapidement un métier.</p>
+          <ul class="formation-tags">
+            <li data-i18n="tag_pizza">Pizza</li><li data-i18n="tag_fastfood">Fast Food</li><li data-i18n="tag_boulangerie">Boulangerie</li>
+            <li data-i18n="tag_viennoiserie">Viennoiserie</li><li data-i18n="tag_patisserie_tn">Pâtisserie tunisienne</li>
+            <li data-i18n="tag_cuisine_int">Cuisine internationale</li><li data-i18n="tag_sushi">Sushi</li>
+          </ul>
+          <a href="#inscription" class="formation-btn" data-i18n="formation_cta">S'informer<i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ SAVEURS DU MONDE (carousel) ============ -->
+<section class="flavors">
+  <div class="container">
+    <div class="section-head reveal light">
+      <p class="eyebrow-soft" data-i18n="flavors_eyebrow">Voyage gastronomique</p>
+      <h2 data-i18n="flavors_title">Explorez les saveurs du monde</h2>
+    </div>
+  </div>
+
+  <div class="carousel-wrap reveal">
+    <button class="carousel-btn prev" id="carPrev" aria-label="Précédent"><i class="fa-solid fa-chevron-left"></i></button>
+    <div class="carousel-viewport" id="carViewport">
+      <div class="carousel-track" id="carTrack">
+        <div class="flavor-slide"><img src="images/pizza.jpg" alt="Cuisine Italienne"><div class="flavor-caption"><img class="flavor-thumb" src="images/pizza.jpg" alt=""><span data-i18n="flavor_italian">Cuisine Italienne</span></div></div>
+        <div class="flavor-slide"><img src="images/pasta.jpg" alt="Pasta"><div class="flavor-caption"><img class="flavor-thumb" src="images/pasta.jpg" alt=""><span data-i18n="flavor_pasta">Pasta</span></div></div>
+        <div class="flavor-slide"><img src="images/sushi-plate.jpg" alt="Sushi"><div class="flavor-caption"><img class="flavor-thumb" src="images/sushi-plate.jpg" alt=""><span data-i18n="flavor_sushi">Sushi</span></div></div>
+        <div class="flavor-slide"><img src="images/croissant.jpg" alt="Pâtisserie"><div class="flavor-caption"><img class="flavor-thumb" src="images/croissant.jpg" alt=""><span data-i18n="flavor_pastry">Pâtisserie</span></div></div>
+        <div class="flavor-slide"><img src="images/pastry-prep.jpg" alt="Boulangerie et Viennoiserie"><div class="flavor-caption"><img class="flavor-thumb" src="images/pastry-prep.jpg" alt=""><span data-i18n="flavor_bakery">Boulangerie &amp; Viennoiserie</span></div></div>
+        <div class="flavor-slide"><img src="images/chef-burger.jpg" alt="Fast Food"><div class="flavor-caption"><img class="flavor-thumb" src="images/chef-burger.jpg" alt=""><span data-i18n="flavor_fastfood">Fast Food</span></div></div>
+        <div class="flavor-slide"><img src="images/seafood.jpg" alt="Cuisine Tunisienne"><div class="flavor-caption"><img class="flavor-thumb" src="images/seafood.jpg" alt=""><span data-i18n="flavor_tunisian">Cuisine Tunisienne</span></div></div>
+        <div class="flavor-slide"><img src="images/chef-plating1.jpg" alt="Cuisine Internationale"><div class="flavor-caption"><img class="flavor-thumb" src="images/chef-plating1.jpg" alt=""><span data-i18n="flavor_international">Cuisine Internationale</span></div></div>
+      </div>
+    </div>
+    <button class="carousel-btn next" id="carNext" aria-label="Suivant"><i class="fa-solid fa-chevron-right"></i></button>
+  </div>
+</section>
+
+<!-- ============ NOS CHEFS ============ -->
+<section class="chefs" id="chefs">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow-soft" data-i18n="chefs_eyebrow">L'équipe pédagogique</p>
+      <h2 data-i18n="chefs_title">Nos chefs formateurs</h2>
+      <p class="section-slogan" data-i18n="chefs_slogan">Notre force, c'est nos formateurs</p>
+    </div>
+
+    <div class="chefs-grid">
+      <div class="chef-card reveal">
+        <div class="chef-photo"><img src="images/chef-plating1.jpg" alt="Chef cuisine"></div>
+        <div class="chef-overlay">
+          <h3 data-i18n="chef1_name">Chef Karim B.</h3>
+          <span class="chef-role" data-i18n="chef1_role">Chef Cuisine</span>
+          <p data-i18n="chef1_text">Spécialiste de la cuisine gastronomique et du dressage d'assiette.</p>
+        </div>
+      </div>
+      <div class="chef-card reveal">
+        <div class="chef-photo"><img src="images/chef-plating2.jpg" alt="Chef pâtissier"></div>
+        <div class="chef-overlay">
+          <h3 data-i18n="chef2_name">Chef Yassine T.</h3>
+          <span class="chef-role" data-i18n="chef2_role">Chef Pâtissier</span>
+          <p data-i18n="chef2_text">Expert en pâtisserie fine et techniques de dressage moderne.</p>
+        </div>
+      </div>
+      <div class="chef-card reveal">
+        <div class="chef-photo"><img src="images/kitchen-team1.jpg" alt="Chef formateur"></div>
+        <div class="chef-overlay">
+          <h3 data-i18n="chef3_name">Chef Mounir S.</h3>
+          <span class="chef-role" data-i18n="chef3_role">Chef Formateur</span>
+          <p data-i18n="chef3_text">Plus de 20 ans d'expérience en cuisine tunisienne et internationale.</p>
+        </div>
+      </div>
+      <div class="chef-card reveal">
+        <div class="chef-photo"><img src="images/sushi-hands.jpg" alt="Chef sushi"></div>
+        <div class="chef-overlay">
+          <h3 data-i18n="chef4_name">Chef Nour A.</h3>
+          <span class="chef-role" data-i18n="chef4_role">Chef Sushi</span>
+          <p data-i18n="chef4_text">Formée aux techniques japonaises traditionnelles du sushi.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ APPRENDRE EN PRATIQUANT ============ -->
+<section class="practice" id="pratique">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow-soft" data-i18n="practice_eyebrow">Notre pédagogie</p>
+      <h2 data-i18n="practice_title">Apprendre en pratiquant</h2>
+      <p data-i18n="practice_text">Une formation basée sur la pratique pour vous préparer aux réalités du métier.</p>
+    </div>
+
+    <div class="masonry" id="practiceMasonry">
+      <div class="masonry-item lightbox-trigger reveal" data-full="images/kitchen-team1.jpg"><img src="images/kitchen-team1.jpg" alt="Étudiants en cuisine" loading="lazy"></div>
+      <div class="masonry-item lightbox-trigger reveal" data-full="images/sushi-hands.jpg"><img src="images/sushi-hands.jpg" alt="Préparation de sushi" loading="lazy"></div>
+      <div class="masonry-item lightbox-trigger reveal" data-full="images/chef-plating2.jpg"><img src="images/chef-plating2.jpg" alt="Dressage professionnel" loading="lazy"></div>
+      <div class="masonry-item lightbox-trigger reveal" data-full="images/pastry-prep.jpg"><img src="images/pastry-prep.jpg" alt="Préparation pâtisserie" loading="lazy"></div>
+      <div class="masonry-item lightbox-trigger reveal" data-full="images/kitchen-team2.jpg"><img src="images/kitchen-team2.jpg" alt="Encadrement en cuisine" loading="lazy"></div>
+      <div class="masonry-item lightbox-trigger reveal" data-full="images/chef-plating1.jpg"><img src="images/chef-plating1.jpg" alt="Chef en action" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY US ============ -->
+<section class="why">
+  <div class="container">
+    <div class="section-head reveal light">
+      <h2 data-i18n="why_title">Pourquoi choisir Master Class Academy ?</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-item reveal"><i class="fa-solid fa-circle-check"></i><span data-i18n="why1">Formation pratique et professionnelle</span></div>
+      <div class="why-item reveal"><i class="fa-solid fa-circle-check"></i><span data-i18n="why2">Avec ou sans Baccalauréat</span></div>
+      <div class="why-item reveal"><i class="fa-solid fa-circle-check"></i><span data-i18n="why3">Certifications reconnues</span></div>
+      <div class="why-item reveal"><i class="fa-solid fa-circle-check"></i><span data-i18n="why4">Encadrement par des chefs professionnels</span></div>
+      <div class="why-item reveal"><i class="fa-solid fa-circle-check"></i><span data-i18n="why5">Formations adaptées à différents niveaux</span></div>
+      <div class="why-item reveal"><i class="fa-solid fa-circle-check"></i><span data-i18n="why6">Opportunités d'insertion professionnelle en Tunisie et à l'étranger</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="gallery" id="galerie">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow-soft" data-i18n="gallery_eyebrow">Notre univers</p>
+      <h2 data-i18n="gallery_title">Le goût de la passion</h2>
+    </div>
+
+    <div class="gallery-filters reveal" id="galleryFilters">
+      <button class="filter-btn active" data-filter="tous" data-i18n="filter_all">Tous</button>
+      <button class="filter-btn" data-filter="cuisine" data-i18n="filter_cuisine">Cuisine</button>
+      <button class="filter-btn" data-filter="patisserie" data-i18n="filter_patisserie">Pâtisserie</button>
+      <button class="filter-btn" data-filter="sushi" data-i18n="filter_sushi">Sushi</button>
+      <button class="filter-btn" data-filter="pizza" data-i18n="filter_pizza">Pizza</button>
+      <button class="filter-btn" data-filter="desserts" data-i18n="filter_desserts">Desserts</button>
+      <button class="filter-btn" data-filter="chefs" data-i18n="filter_chefs">Nos Chefs</button>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid">
+      <div class="gallery-item lightbox-trigger" data-cat="pizza" data-full="images/pizza.jpg"><img src="images/pizza.jpg" alt="Pizzas artisanales" loading="lazy"></div>
+      <div class="gallery-item lightbox-trigger" data-cat="cuisine" data-full="images/pasta.jpg"><img src="images/pasta.jpg" alt="Pâtes au thon" loading="lazy"></div>
+      <div class="gallery-item lightbox-trigger" data-cat="sushi" data-full="images/sushi-plate.jpg"><img src="images/sushi-plate.jpg" alt="Plateau de sushi" loading="lazy"></div>
+      <div class="gallery-item lightbox-trigger" data-cat="desserts" data-full="images/croissant.jpg"><img src="images/croissant.jpg" alt="Croissants garnis" loading="lazy"></div>
+      <div class="gallery-item lightbox-trigger" data-cat="patisserie" data-full="images/pastry-prep.jpg"><img src="images/pastry-prep.jpg" alt="Chaussons aux pommes" loading="lazy"></div>
+      <div class="gallery-item lightbox-trigger" data-cat="cuisine" data-full="images/seafood.jpg"><img src="images/seafood.jpg" alt="Moules aux herbes" loading="lazy"></div>
+      <div class="gallery-item lightbox-trigger" data-cat="chefs" data-full="images/chef-burger.jpg"><img src="images/chef-burger.jpg" alt="Chef et son burger" loading="lazy"></div>
+      <div class="gallery-item lightbox-trigger" data-cat="sushi" data-full="images/sushi-hands.jpg"><img src="images/sushi-hands.jpg" alt="Atelier sushi" loading="lazy"></div>
+      <div class="gallery-item lightbox-trigger" data-cat="chefs" data-full="images/chef-plating1.jpg"><img src="images/chef-plating1.jpg" alt="Chef au dressage" loading="lazy"></div>
+      <div class="gallery-item lightbox-trigger" data-cat="chefs" data-full="images/chef-plating2.jpg"><img src="images/chef-plating2.jpg" alt="Chef à la siphon" loading="lazy"></div>
+      <div class="gallery-item lightbox-trigger" data-cat="cuisine" data-full="images/kitchen-team1.jpg"><img src="images/kitchen-team1.jpg" alt="Équipe en cuisine" loading="lazy"></div>
+      <div class="gallery-item lightbox-trigger" data-cat="sushi" data-full="images/sushi-ingredients.jpg"><img src="images/sushi-ingredients.jpg" alt="Nigiri saumon" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="testimonials">
+  <div class="container">
+    <div class="section-head reveal light">
+      <p class="eyebrow-soft" data-i18n="testi_eyebrow">Ils témoignent</p>
+      <h2 data-i18n="testi_title">Nos étudiants parlent de leur expérience</h2>
+    </div>
+
+    <div class="testi-slider" id="testiSlider">
+      <div class="testi-track" id="testiTrack">
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p data-i18n="testi1_text">"Une excellente expérience, beaucoup de pratique et des formateurs très professionnels."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">AM</div>
+            <div><strong data-i18n="testi1_name">Aymen M.</strong><span data-i18n="testi1_role">CAP Cuisine &amp; Pâtisserie</span></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p data-i18n="testi2_text">"J'ai appris énormément en peu de temps. L'ambiance et le sérieux des chefs font toute la différence."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">SR</div>
+            <div><strong data-i18n="testi2_name">Salma R.</strong><span data-i18n="testi2_role">BTP Pâtisserie</span></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p data-i18n="testi3_text">"Grâce à Master Class Academy, j'ai décroché mon premier poste en cuisine avant même la fin de ma formation."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">YB</div>
+            <div><strong data-i18n="testi3_name">Youssef B.</strong><span data-i18n="testi3_role">BTS Cuisine</span></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p data-i18n="testi4_text">"La formation accélérée en pâtisserie tunisienne m'a permis de me lancer très rapidement."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">IH</div>
+            <div><strong data-i18n="testi4_name">Ines H.</strong><span data-i18n="testi4_role">Formation accélérée</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-dots" id="testiDots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REGISTRATION ============ -->
+<section class="registration" id="inscription">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2 data-i18n="reg_title">Inscrivez-vous à Master Class Academy</h2>
+      <p data-i18n="reg_subtitle">Votre première étape vers une carrière dans les métiers de la cuisine et de la pâtisserie.</p>
+    </div>
+
+    <div class="registration-grid">
+      <div class="reg-visual reveal">
+        <img src="images/kitchen-team2.jpg" alt="Étudiants en formation pratique">
+        <div class="reg-badge">
+          <i class="fa-solid fa-certificate"></i>
+          <span data-i18n="reg_badge">Diplôme homologué</span>
+        </div>
+      </div>
+
+      <div class="reg-form-wrap reveal">
+        <form id="registrationForm" novalidate>
+          <div class="form-row">
+            <label for="fullname" data-i18n="lbl_fullname">الاسم واللقب *</label>
+            <input type="text" id="fullname" name="fullname" required>
+            <span class="err-msg" data-i18n="err_fullname">Merci d'indiquer votre nom complet.</span>
+          </div>
+
+          <div class="form-row-split">
+            <div class="form-row">
+              <label for="dob" data-i18n="lbl_dob">Date de naissance *</label>
+              <input type="date" id="dob" name="dob" required>
+              <span class="err-msg" data-i18n="err_dob">Merci d'indiquer votre date de naissance.</span>
+            </div>
+            <div class="form-row">
+              <label for="phone" data-i18n="lbl_phone">رقم الهاتف *</label>
+              <input type="tel" id="phone" name="phone" required placeholder="98 998 489">
+              <span class="err-msg" data-i18n="err_phone">Merci d'indiquer un numéro de téléphone valide.</span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label for="email" data-i18n="lbl_email">البريد الإلكتروني</label>
+            <input type="email" id="email" name="email" placeholder="exemple@email.com">
+            <span class="err-msg" data-i18n="err_email">Merci d'indiquer une adresse e-mail valide.</span>
+          </div>
+
+          <div class="form-row">
+            <label for="address" data-i18n="lbl_address">العنوان *</label>
+            <input type="text" id="address" name="address" required>
+            <span class="err-msg" data-i18n="err_address">Merci d'indiquer votre adresse.</span>
+          </div>
+
+          <div class="form-row">
+            <label for="specialty" data-i18n="lbl_specialty">الاختصاص المطلوب *</label>
+            <select id="specialty" name="specialty" required>
+              <option value="" data-i18n="opt_choose">Sélectionnez une option</option>
+              <option value="cap" data-i18n="opt_cap">CAP في الحلويات والطبخ (يمكن الالتحاق بالتكوين ابتداءً من مستوى السنة التاسعة أساسي منهاة)</option>
+              <option value="btp_cuisine" data-i18n="opt_btp_cuisine">BTP في الطبخ (يمكن الالتحاق بالتكوين ابتداءً من مستوى السنة الثانية ثانوي منهاة أو CAP)</option>
+              <option value="btp_patisserie" data-i18n="opt_btp_patisserie">BTP في الحلويات (يمكن الالتحاق بالتكوين ابتداءً من مستوى السنة الثانية ثانوي منهاة أو CAP)</option>
+              <option value="bts_cuisine" data-i18n="opt_bts_cuisine">BTS في الطبخ (يمكن الالتحاق بالتكوين ابتداءً من مستوى بكالوريا أو BTP)</option>
+              <option value="bts_patisserie" data-i18n="opt_bts_patisserie">BTS في الحلويات (يمكن الالتحاق بالتكوين ابتداءً من مستوى بكالوريا أو BTP)</option>
+              <option value="certificat" data-i18n="opt_certificat">شهادة في ختم تكوين (أي مستوى)</option>
+              <option value="rapide" data-i18n="opt_rapide">دورات تكوين سريعة</option>
+            </select>
+            <span class="err-msg" data-i18n="err_specialty">Merci de choisir une spécialité.</span>
+          </div>
+
+          <div class="form-row">
+            <label for="source" data-i18n="lbl_source">Comment avez-vous connu Master Class Academy ?</label>
+            <select id="source" name="source">
+              <option value="facebook">Facebook</option>
+              <option value="instagram">Instagram</option>
+              <option value="tiktok">TikTok</option>
+              <option value="google">Google</option>
+              <option value="recommandation" data-i18n="opt_recommandation">Recommandation</option>
+              <option value="autre" data-i18n="opt_autre">Autre</option>
+            </select>
+          </div>
+
+          <label class="form-check">
+            <input type="checkbox" id="consent" name="consent" required>
+            <span data-i18n="lbl_consent">J'accepte d'être contacté(e) par l'équipe de Master Class Academy concernant ma demande.</span>
+          </label>
+          <span class="err-msg err-msg-check" data-i18n="err_consent">Merci d'accepter d'être contacté(e).</span>
+
+          <button type="submit" class="btn btn-gold btn-submit">
+            <span data-i18n="btn_submit">Envoyer ma demande</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </form>
+
+        <div class="form-success" id="formSuccess">
+          <i class="fa-solid fa-circle-check"></i>
+          <h3 data-i18n="success_title">Merci pour votre inscription !</h3>
+          <p data-i18n="success_text">Notre équipe vous contactera prochainement pour vous communiquer toutes les informations concernant votre formation.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Arabic info block -->
+    <div class="ar-info reveal" dir="rtl">
+      <h3>استمارة التسجيل – ماستر كلاس أكاديمي</h3>
+      <p class="ar-lead">هل تحلم بمستقبل مهني في عالم الطبخ والحلويات؟ 🍰👨‍🍳</p>
+      <p>تدعوكم أكاديمية ماستر كلاس، المركز المتخصص في التكوين المهني في فنون الطبخ والحلويات، إلى الانضمام إلى برامجها التكوينية المعتمدة والموجهة لكل من يرغب في اكتساب مهارات احترافية وبناء مستقبل واعد في المجال.</p>
+      <ul class="ar-benefits">
+        <li>✅ تكوين تطبيقي ومهني</li>
+        <li>✅ مع أو بدون شهادة البكالوريا</li>
+        <li>✅ شهادات معترف بها</li>
+        <li>✅ تأطير من قبل طهاة محترفين وخبراء في المجال</li>
+        <li>✅ فرص إدماج مهني داخل وخارج تونس</li>
+        <li>✅ اختصاصات CAP و BTP و BTS في الطبخ والحلويات</li>
+      </ul>
+      <p class="ar-address">📍 83 شارع 20 مارس، باردو – تونس</p>
+      <p class="ar-final">✨ خطوتك الأولى نحو الاحتراف تبدأ من هنا!</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT / LOCATION ============ -->
+<section class="location" id="contact">
+  <div class="container">
+    <div class="section-head reveal light">
+      <h2 data-i18n="loc_title">Venez nous rencontrer</h2>
+    </div>
+
+    <div class="location-grid">
+      <div class="location-info reveal">
+        <div class="loc-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <div><strong data-i18n="loc_address_label">Adresse</strong><span>83 شارع 20 مارس، باردو – تونس</span></div>
+        </div>
+        <div class="loc-item">
+          <i class="fa-solid fa-phone"></i>
+          <div><strong data-i18n="loc_phone_label">Téléphone</strong><span>98 998 489 · 24 666 772 · 99 571 581</span></div>
+        </div>
+        <div class="loc-item">
+          <i class="fa-solid fa-envelope"></i>
+          <div><strong data-i18n="loc_email_label">Email</strong><span>contact@masterclassacademy.tn</span></div>
+        </div>
+        <div class="loc-item">
+          <i class="fa-brands fa-whatsapp"></i>
+          <div><strong>WhatsApp</strong><span>98 998 489</span></div>
+        </div>
+        <a href="#inscription" class="btn btn-gold" data-i18n="loc_cta">Nous contacter</a>
+      </div>
+
+      <div class="location-map reveal">
+        <iframe title="Master Class Academy - Bardo" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Bardo,Tunis,Tunisia&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <div class="brand">
+        <span class="brand-mark">
+          <img src="images/logo.png" alt="Master Class Academy">
+        </span>
+        <span class="brand-text"><strong>Master Class</strong><em>Academy</em></span>
+      </div>
+      <p data-i18n="footer_slogan">Formez-vous. Pratiquez. Réussissez.</p>
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-nav">
+      <h4 data-i18n="footer_nav_title">Navigation</h4>
+      <a href="#accueil" data-i18n="nav_home">Accueil</a>
+      <a href="#academie" data-i18n="nav_academy">À propos de nous</a>
+      <a href="#formations" data-i18n="nav_formations">Formations</a>
+      <a href="#chefs" data-i18n="nav_chefs">Nos Chefs</a>
+      <a href="#galerie" data-i18n="nav_gallery">Galerie</a>
+      <a href="#inscription" data-i18n="nav_registration">Inscription</a>
+      <a href="#contact" data-i18n="nav_contact">Contact</a>
+    </div>
+
+    <div class="footer-contact">
+      <h4 data-i18n="footer_contact_title">Contact</h4>
+      <p><i class="fa-solid fa-location-dot"></i> 83 شارع 20 مارس، باردو – تونس</p>
+      <p><i class="fa-solid fa-phone"></i> 98 998 489</p>
+      <p><i class="fa-solid fa-envelope"></i> contact@masterclassacademy.tn</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Master Class Academy. <span data-i18n="footer_rights">Tous droits réservés.</span></p>
+  </div>
+</footer>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Fermer"><i class="fa-solid fa-xmark"></i></button>
+  <img src="" alt="" id="lightboxImg">
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
