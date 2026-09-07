@@ -21,6 +21,15 @@
   var hamburger = document.getElementById('hamburger');
   var mobileMenu = document.getElementById('mobileMenu');
 
+  // Fonction pour fermer le menu mobile
+  function closeMobileMenu(){
+    mobileMenu.classList.remove('open');
+    hamburger.classList.remove('active');
+    hamburger.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+
+  // Toggle ouverture / fermeture via le hamburger
   hamburger.addEventListener('click', function(){
     var isOpen = mobileMenu.classList.toggle('open');
     hamburger.classList.toggle('active', isOpen);
@@ -28,12 +37,14 @@
     document.body.style.overflow = isOpen ? 'hidden' : '';
   });
 
+  // Fermer quand on clique sur un lien de navigation
   mobileMenu.querySelectorAll('a').forEach(function(link){
-    link.addEventListener('click', function(){
-      mobileMenu.classList.remove('open');
-      hamburger.classList.remove('active');
-      document.body.style.overflow = '';
-    });
+    link.addEventListener('click', closeMobileMenu);
+  });
+
+  // Fermer quand on change de langue dans le menu mobile
+  mobileMenu.querySelectorAll('.lang-btn').forEach(function(btn){
+    btn.addEventListener('click', closeMobileMenu);
   });
 
   /* ---------------------------------------------------------
